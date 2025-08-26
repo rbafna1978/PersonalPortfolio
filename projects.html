@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Rishit Bafna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Rishit Bafna</div>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+  </header>
+  <main>
+    <section class="section" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <h3>Blockchain Voting System</h3>
+          <p>Decentralized voting system using Solidity smart contracts with Web3.js and MetaMask integration.</p>
+          <button class="toggle-details">Details</button>
+          <div class="details">
+            <ul>
+              <li>Candidate registration, voting and tallying on Ethereum.</li>
+              <li>Truffle for contract deployment and Web3.js for web-based admin panel.</li>
+              <li>MetaMask for secure voter authentication and transaction management.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Interview AI Helper</h3>
+          <p>AI-driven interview preparation tool providing feedback on user responses.</p>
+          <button class="toggle-details">Details</button>
+          <div class="details">
+            <ul>
+              <li>Machine learning models for semantic similarity, keyword extraction, and scoring.</li>
+              <li>Full-stack React/Node.js/FastAPI with custom ML pipelines for real-time feedback.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <h3>Note-Taking Web Application</h3>
+          <p>Secure ASP.NET note-taking app with authentication and file uploads.</p>
+          <button class="toggle-details">Details</button>
+          <div class="details">
+            <ul>
+              <li>Custom password hashing and CAPTCHA verification.</li>
+              <li>File upload system for storing and retrieving notes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Rishit Yogesh Bafna</p>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
