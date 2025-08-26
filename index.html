@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishit Yogesh Bafna - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Rishit Bafna</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+    <section class="hero">
+      <h1>Rishit Yogesh Bafna</h1>
+      <p class="tagline">Full-stack Software Engineer</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Full-stack Software Engineer with experience in building data-driven, AI-powered applications and user-focused systems. Skilled in React, FastAPI, and cloud technologies, with a strong focus on scalable, and accessible solutions that improve real-world outcomes.</p>
+      <p><strong>Education:</strong> Arizona State University, B.S. Computer Science (Software Engineering), Dec 2025, GPA 3.4.</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Programming</h3>
+          <p>Python, Java, C/C++, C#, JavaScript/TypeScript, Swift</p>
+        </div>
+        <div>
+          <h3>AI/ML & NLP</h3>
+          <p>PyTorch, TensorFlow, scikit-learn, spaCy, Hugging Face Transformers</p>
+        </div>
+        <div>
+          <h3>Web Development</h3>
+          <p>React, Next.js, Node.js, FastAPI, Flask, .NET, REST APIs, GraphQL</p>
+        </div>
+        <div>
+          <h3>Databases & Cloud</h3>
+          <p>SQL, NoSQL, AWS (EC2, S3), Firebase</p>
+        </div>
+        <div>
+          <h3>Tools & Practices</h3>
+          <p>Git/GitHub, Agile/Scrum, JUnit, SDLC, Prompt Engineering</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Blockchain Voting System</h3>
+          <p>Decentralized voting system using Solidity smart contracts with Web3.js and MetaMask integration.</p>
+          <button class="toggle-details">Details</button>
+          <div class="details">
+            <ul>
+              <li>Candidate registration, voting and tallying on Ethereum.</li>
+              <li>Truffle for contract deployment and Web3.js for web-based admin panel.</li>
+              <li>MetaMask for secure voter authentication and transaction management.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Interview AI Helper</h3>
+          <p>AI-driven interview preparation tool providing feedback on user responses.</p>
+          <button class="toggle-details">Details</button>
+          <div class="details">
+            <ul>
+              <li>Machine learning models for semantic similarity, keyword extraction, and scoring.</li>
+              <li>Full-stack React/Node.js/FastAPI with custom ML pipelines for real-time feedback.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Note-Taking Web Application</h3>
+          <p>Secure ASP.NET note-taking app with authentication and file uploads.</p>
+          <button class="toggle-details">Details</button>
+          <div class="details">
+            <ul>
+              <li>Custom password hashing and CAPTCHA verification.</li>
+              <li>File upload system for storing and retrieving notes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Performance Event Assistant</h3>
+          <p>Arizona State University | Dec 2022 - Present</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Software Engineering Intern</h3>
+          <p>Winsoft Technologies India Pvt Ltd | May 2023 - Jul 2023</p>
+          <ul>
+            <li>Developed database tables and stored procedures to optimize data flow.</li>
+            <li>Integrated SQL Server into Smart-Mutual product with detailed design docs.</li>
+            <li>Implemented data validation protocols ensuring integrity.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Tempe, AZ | <a href="mailto:rbafna@asu.edu">rbafna@asu.edu</a> | <a href="https://www.linkedin.com/in/rishit-bafna" target="_blank">LinkedIn</a></p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Rishit Yogesh Bafna</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
