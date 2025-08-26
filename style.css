@@ -10,18 +10,27 @@
   --accent-secondary: #4ecdc4;
   --card-bg: rgba(255, 255, 255, 0.08);
 }
+body.light {
+  --bg-gradient: linear-gradient(120deg, #f8f9fa, #e9ecef, #dee2e6);
+  --text-color: #212529;
+  --accent: #0077ff;
+  --accent-secondary: #00c9a7;
+  --card-bg: rgba(0, 0, 0, 0.05);
+}
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   background: var(--bg-gradient);
   color: var(--text-color);
+  transition:
+    background 0.5s ease,
+    color 0.5s ease;
 }
 header {
   background: transparent;
 }
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   position: sticky;
@@ -36,6 +45,7 @@ header {
 .navbar .nav-links {
   display: flex;
   list-style: none;
+  margin-left: auto;
 }
 .navbar .nav-links li {
   margin-left: 1.5rem;
@@ -47,6 +57,26 @@ header {
 }
 .navbar a:hover {
   color: var(--accent);
+}
+.theme-toggle {
+  margin-left: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+.theme-toggle:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+.theme-toggle.spin {
+  animation: spin 0.5s ease;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .hamburger {
   display: none;
