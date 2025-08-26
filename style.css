@@ -4,17 +4,17 @@
   padding: 0;
 }
 :root {
-  --bg-gradient: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  --text-color: #f5f5f5;
-  --accent: #ff6b6b;
-  --accent-secondary: #4ecdc4;
-  --card-bg: rgba(255, 255, 255, 0.08);
+  --bg-gradient: linear-gradient(135deg, #1e3c72, #2a5298);
+  --text-color: #f0f4f8;
+  --accent: #ff7f50;
+  --accent-secondary: #ffd700;
+  --card-bg: rgba(255, 255, 255, 0.1);
 }
 body.light {
-  --bg-gradient: linear-gradient(120deg, #f8f9fa, #e9ecef, #dee2e6);
-  --text-color: #212529;
-  --accent: #0077ff;
-  --accent-secondary: #00c9a7;
+  --bg-gradient: linear-gradient(135deg, #ffffff, #dfe9f3);
+  --text-color: #1e2125;
+  --accent: #ff7f50;
+  --accent-secondary: #ffae00;
   --card-bg: rgba(0, 0, 0, 0.05);
 }
 body {
@@ -115,6 +115,34 @@ header {
 .btn:hover {
   background: var(--accent-secondary);
 }
+
+/* Floating home button */
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.3s;
+  animation: fadeIn 1s ease;
+}
+.home-button:hover {
+  background: var(--accent-secondary);
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .section {
   padding: 4rem 2rem;
   margin: 2rem auto;
@@ -122,6 +150,8 @@ header {
   background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: slideUp 0.8s ease forwards;
 }
 .section h2 {
   text-align: center;
@@ -171,6 +201,17 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @media (max-width: 768px) {
   .navbar .nav-links {
